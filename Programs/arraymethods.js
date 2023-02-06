@@ -33,8 +33,8 @@ arr.fill(3,2)
 console.log(arr);
 console.log("--------------")
 console.log("7.filter() method")
-let arr5 = arr1.filter(check);
-function check(a) {
+let arr5 = arr1.filter(check1);
+function check1(a) {
     return a%2==0;
 }
 console.log(arr5);
@@ -47,19 +47,19 @@ function check(a){
 console.log(x);
 console.log("--------------")
 console.log("9.findIndex() method")
-x = arr1.findIndex(check);
-function check(a){
+x = arr1.findIndex(check2);
+function check2(a){
     return a%5==0;
 }
 console.log(x);
 console.log("--------------")
 console.log("10.forEach() method")
-arr1.forEach(func);
-function func(a){
+arr1.forEach(func1);
+function func1(a){
     console.log(a+1);
 }
-arr.forEach(func);
-function func(a){
+arr.forEach(func2);
+function func2(a){
     console.log(a+2);
 }
 console.log("--------------")
@@ -94,8 +94,8 @@ console.log("18.length method")
 console.log(arr.length)
 console.log("--------------")
 console.log("19.map() method")
-x = arr1.map(func)
-function func(a){
+x = arr1.map(func3)
+function func3(a){
     return a*3;
 }
 console.log(x)
@@ -119,15 +119,15 @@ arr4.push("tiger");
 console.log(arr4);
 console.log("--------------")
 console.log("23.reduce() method")
-x = arr1.reduce(func)
-function func(a,b){
+x = arr1.reduce(func4)
+function func4(a,b){
     return a-b;
 }
 console.log(x)
 console.log("--------------")
 console.log("24.reduceRight() method")
-x = arr1.reduceRight(func)
-function func(a,b){
+x = arr1.reduceRight(func5)
+function func5(a,b){
     return a-b;
 }
 console.log(x)
@@ -144,14 +144,15 @@ x=arr4.slice(3,5)
 console.log(x)
 console.log("--------------")
 console.log("28.some() method")
-v = arr.every(check)
-function check(a){
+v = arr.every(check3)
+function check3(a){
     return a>4;
 }
 console.log(v);
 console.log("--------------")
 console.log("29.sort() method")
-console.log(arr4.sort())
+let z = arr4.sort()
+console.log(z)
 console.log("--------------")
 console.log("30.splice() method")
 arr.splice(2,2)
