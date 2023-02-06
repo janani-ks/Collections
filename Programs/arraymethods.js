@@ -40,8 +40,8 @@ function check1(a) {
 console.log(arr5);
 console.log("--------------")
 console.log("8.find() method")
-let x = arr1.find(check);
-function check(a){
+let x = arr1.find(check4);
+function check4(a){
     return a%5==0;
 }
 console.log(x);
