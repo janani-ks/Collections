@@ -10,7 +10,7 @@ class Stack {
         if(this.rootNode == null){
             this.rootNode= new Node(value)
         }else{
-            var temp = this.rootNode;
+            let temp = this.rootNode;
             while(temp.nextNode != null){
                 temp = temp.nextNode;
             }
@@ -18,8 +18,8 @@ class Stack {
         }
     }
     removeElement(){
-        var temp = this.rootNode;
-        var pre = null
+        let temp = this.rootNode;
+        let pre = null
         if(this.rootNode.nextNode==null){
             this.rootNode = null
         }
@@ -33,7 +33,7 @@ class Stack {
     }
 
     printElements(){
-        var temp = this.rootNode;
+        let temp = this.rootNode;
             if(temp == null){
                 console.log("Is empty!")
             }else{
@@ -45,11 +45,10 @@ class Stack {
     }
 }
 
-var stack = new Stack();
+let stack = new Stack();
 stack.addElement(12);
 stack.addElement(4);
 stack.addElement(10);
 stack.removeElement();
-//stack.removeElement();
-//stack.removeElement();
+stack.removeElement();
 stack.printElements();
