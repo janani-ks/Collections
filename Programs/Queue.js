@@ -10,7 +10,7 @@ class Queue {
         if(this.rootNode == null){
             this.rootNode= new Node(value)
         }else{
-            var temp = this.rootNode;
+            let temp = this.rootNode;
             while(temp.nextNode != null){
                 temp = temp.nextNode;
             }
@@ -18,12 +18,12 @@ class Queue {
         }
     }
     removeElement(){
-        var temp = this.rootNode
+        let temp = this.rootNode
         this.rootNode = temp.nextNode
     }
 
     printElements(){
-        var temp = this.rootNode;
+        let temp = this.rootNode;
         if(temp == null){
             console.log("Is empty!")
         }else{
@@ -35,7 +35,7 @@ class Queue {
     }
 }
 
-var queue = new Queue(); // u
+let queue = new Queue(); // u
 queue.addElement(12);
 queue.addElement(4);
 queue.addElement(10);
